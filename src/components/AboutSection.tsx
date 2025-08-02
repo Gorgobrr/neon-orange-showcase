@@ -23,31 +23,32 @@ const AboutSection = () => {
               <img
                 src={profilePicture}
                 alt="Profile"
-                className="w-48 h-48 rounded-full object-cover border-4 border-primary neon-glow animate-float"
+                className="w-48 h-48 rounded-full object-cover border-4 border-primary neon-glow"
+                style={{ animation: "float 3s ease-in-out infinite" }}
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
             </div>
           </div>
 
           {/* Name */}
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 gradient-text animate-fade-in-up">
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 gradient-text">
             Your Name
           </h1>
 
           {/* Position */}
-          <p className="text-xl md:text-2xl text-primary mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-xl md:text-2xl text-primary mb-6">
             Creative Digital Designer & Video Producer
           </p>
 
           {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
             Passionate about creating stunning visual experiences and compelling video content. 
             I specialize in digital design, social media collaboration, and video production 
             that brings brands to life through innovative storytelling and cutting-edge design.
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button variant="neon" size="lg" className="group">
               <Download className="w-5 h-5 group-hover:animate-bounce" />
               Download CV
@@ -82,7 +83,7 @@ const AboutSection = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex justify-center space-x-4 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
+          <div className="flex justify-center space-x-4">
             {socialLinks.map((social, index) => (
               <Button
                 key={social.label}

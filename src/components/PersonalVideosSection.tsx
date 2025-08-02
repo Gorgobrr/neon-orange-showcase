@@ -104,12 +104,11 @@ const PersonalVideosSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto animate-stagger">
           {videos.map((video, index) => (
             <Card 
               key={video.id}
-              className="bg-card border-border overflow-hidden group hover:border-primary transition-all duration-300 animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="bg-card border-border overflow-hidden group hover:border-primary transition-all duration-300"
             >
               <CardContent className="p-0">
                 {/* Video Thumbnail */}

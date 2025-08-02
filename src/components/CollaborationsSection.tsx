@@ -60,12 +60,11 @@ const CollaborationsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto animate-stagger">
           {collaborations.map((collab, index) => (
             <Card 
               key={collab.id} 
-              className="bg-card border-border hover:border-primary transition-all duration-300 neon-glow-on-hover animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="bg-card border-border hover:border-primary transition-all duration-300 neon-glow-on-hover"
             >
               <CardContent className="p-6">
                 {/* Profile Header */}
