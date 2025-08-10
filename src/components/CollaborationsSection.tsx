@@ -50,7 +50,7 @@ const CollaborationsSection = () => {
 
   return (
     <section id="collaborations" className="py-20 bg-gradient-to-b from-background to-card/50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold gradient-text mb-4">
             Collaborations
